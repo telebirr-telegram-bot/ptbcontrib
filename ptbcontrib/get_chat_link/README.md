@@ -19,8 +19,9 @@ Please see the docstrings for more details.
 
 ## Requirements
 
-*   `python-telegram-bot~=20.0`
+*   `Telebirr-telegram-bot~=20.0`
 
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [Allerter](https://github.com/allerter)
