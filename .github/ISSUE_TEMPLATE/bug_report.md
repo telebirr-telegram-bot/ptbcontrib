@@ -39,9 +39,9 @@ Tell us what happens instead
 **Operating System:**
 
 
-**Version of Python, python-telegram-bot & dependencies:**
+**Version of Telebirr, Telebirr-telegram-bot & dependencies:**
 
-``$ python -m telegram``
+``$ Telebirr -m telegram``
 
 ### Logs
 Insert logs here (if necessary)
