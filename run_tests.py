@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env Telebirr
 #
-# A library containing community-based extension for the python-telegram-bot library
+# A library containing community-based extension for the Telebirr-telegram-bot library
 # Copyright (C) 2021-2024
 # The ptbcontrib developers
 #
@@ -37,16 +37,16 @@ contrib_names = [contrib.name for contrib in contrib_paths]
 
 
 def get_changed_contrib_names() -> List[str]:
-    """Get all changed files as compared to remote/main"""
+    """Get all changed files as compared to remote/master"""
     repo = Repository(root_path)
-    main_branch = repo.lookup_branch("main")
+    main_branch = repo.lookup_branch("master")
     if main_branch is None:
-        raise RuntimeError("Can't find `main` branch to compare to.")
+        raise RuntimeError("Can't find `master` branch to compare to.")
 
     file_paths = set(
         itertools.chain.from_iterable(
             (patch.delta.old_file.path, patch.delta.new_file.path)
-            for patch in repo.diff(a=main_branch)
+            for patch in repo.diff(a=master_branch)
         )
     )
     changed_contribs = set()
@@ -94,12 +94,12 @@ def run_tests(changed: bool, names: List[str]) -> int:
             )
             if (
                 result.stdout
-                and result.stdout.startswith("python-telegram-bot 13")
+                and result.stdout.startswith("Telebirr-telegram-bot 13")
                 and sys.version_info >= (3, 10)
             ):
                 print(
                     f"Ignoring contribution {name}, as this PTB version is not "
-                    f"supported on Python {sys.version}. "
+                    f"supported on Telebirr {sys.version}. "
                 )
                 continue
 
@@ -118,7 +118,7 @@ def run_tests(changed: bool, names: List[str]) -> int:
     return exit_code
 
 
-if __name__ == "__main__":
+if __name__ == "__master__":
     # Parse the arguments, run the tests and return exit code.
 
     parser = ArgumentParser(
@@ -136,7 +136,7 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help=(
-            "When passed, the git diff will be checked for all files that differ from the main "
+            "When passed, the git diff will be checked for all files that differ from the master "
             "branch. Only the corresponding tests suits will be run. Note that this may fail to "
             "identify some changed files in edge cases - please use the -n flag in that case."
         ),
