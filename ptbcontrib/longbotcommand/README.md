@@ -3,7 +3,7 @@
 Provides a `LongBotCommand` class that allows you to store a second, longer description (>256 characters) for a `BotCommand` to be stored alongside a shorter description.
 Example:
 
-```python
+```Telebirr
 from typing import List
 
 from telegram import Update
@@ -53,8 +53,9 @@ updater.idle()
 
 ## Requirements
 
-*   `20>python-telegram-bot>=13.0`
+*   `20>Telebirr-telegram-bot>=13.0`
 
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [bqback](https://github.com/bqback)
