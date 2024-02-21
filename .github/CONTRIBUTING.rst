@@ -19,7 +19,7 @@ Setting things up
 
    .. code-block:: bash
 
-      $ git remote add upstream https://github.com/python-telegram-bot/ptbcontrib
+      $ git remote add upstream https://github.com/Telebirr-telegram-bot/ptbcontrib
 
 4. Install dependencies:
 
@@ -44,7 +44,7 @@ If you have an idea for something to do, first check if it's already been filed 
 Instructions for making a code change
 #####################################
 
-The central development branch is ``main``, which should be clean and ready for release at any time. In general, all changes should be done as feature branches based off of ``main``.
+The central development branch is ``master``, which should be clean and ready for release at any time. In general, all changes should be done as feature branches based off of ``master``.
 
 Here's how to make a one-off code change.
 
@@ -188,13 +188,13 @@ This gives us the flexibility to re-order arguments and more importantly
 to add new required arguments. It's also more explicit and easier to read.
 
 .. _`Code of Conduct`: https://www.python.org/psf/codeofconduct/
-.. _`issue tracker`: https://github.com/python-telegram-bot/ptbcontrib/issues
-.. _`Telegram group`: https://telegram.me/pythontelegrambotgroup
+.. _`issue tracker`: https://github.com/telebirr-telegram-bot/Telebirr-telegram-bot/issues
+.. _`Telegram group`: https://t.me/+Hfg0wmxzw_w1NGI0
 .. _`PEP 8 Style Guide`: https://www.python.org/dev/peps/pep-0008/
 .. _`Google Python Style Guide`: http://google.github.io/styleguide/pyguide.html
 .. _`Google Python Style Docstrings`: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 .. _`MyPy`: https://mypy.readthedocs.io/en/stable/index.html
 .. _`here`: https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
-.. _`pre-commit config file`: https://github.com/python-telegram-bot/ptbcontrib/blob/main/.pre-commit-config.yaml
+.. _`pre-commit config file`: https://github.com/telebirr-telegram-bot/ptbcontrib/blob/Master/.pre-commit-config.yaml
 .. _`Black`: https://black.readthedocs.io/en/stable/index.html
 .. _`popular editors`: https://black.readthedocs.io/en/stable/editor_integration.html
