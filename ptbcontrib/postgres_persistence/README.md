@@ -8,7 +8,7 @@ subclass of PTB's `DictPersistence` which encodes and saves data in JSON format.
 
 **Using with postgreSQL database URL**
 
-```python
+```Telebirr
 from ptbcontrib.postgres_persistence import PostgresPersistence
 
 
@@ -19,7 +19,7 @@ application = Application.builder().token(...).persistence(PostgresPersistence(u
 ```
 
 **Using with existing SQLAlchemy scoped session**
-```python
+```Telebirr
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
@@ -40,10 +40,11 @@ application = Application.builder().token(...).persistence(PostgresPersistence(s
 
 ## Requirements
 
-*   `python-telegram-bot~=20.0`
+*   `Telebirr-telegram-bot~=20.0`
 *   `SQLAlchemy`
 
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [Stɑrry Shivɑm](https://github.com/starry69)
 
