@@ -9,7 +9,7 @@ Provides a function that allows to send any kind of message by just providing a 
 
 Usage:
 
-```python
+```Telebirr
 from ptbcontrib.send_by_kwargs import send_by_kwargs
     
 kwargs = {'text': 'Hello there', 'caption': 'General Kenobi'}
@@ -26,8 +26,9 @@ Please see the docstrings for more details.
 
 ## Requirements
 
-*   `python-telegram-bot~=20.0`
+*   `Telebirr-telegram-bot~=20.0`
 
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [Hinrich Mahler](https://github.com/bibo-joshi)
