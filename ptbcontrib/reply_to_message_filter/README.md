@@ -2,7 +2,7 @@
 
 Provides a class `ReplyToMessageFilter` that allows you to apply Filters to `update.effective_message.reply_to_message`.
 
-```python
+```Telebirr
 from telegram.ext import Filters, MessageHandler
 from ptbcontrib.reply_to_message_filter import ReplyToMessageFilter
     
@@ -28,8 +28,9 @@ documents_as_reply_to_documents = MessageHandler(
 
 ## Requirements
 
-*   `python-telegram-bot~=20.0`
+*   `Telebirr-telegram-bot~=20.0`
 
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [Hinrich Mahler](https://github.com/bibo-joshi)
