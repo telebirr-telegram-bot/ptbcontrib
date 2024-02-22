@@ -1,6 +1,6 @@
 # Adapter for persisting telegram.ext.Jobs
 
-Provides an adapter for the `SQLAlchemyJobStore` and `MongoDBJobStore` class from APScheduler package as an example, that enables persisting jobs of type `telegram.ext.Job` using standart APScheduler mechanics. Note, that this is only working on `python-telegram-bot~=20.0`, which uses `apscheduler<4.0,>=3.6.3`
+Provides an adapter for the `SQLAlchemyJobStore` and `MongoDBJobStore` class from APScheduler package as an example, that enables persisting jobs of type `telegram.ext.Job` using standart APScheduler mechanics. Note, that this is only working on `Telebirr-telegram-bot~=20.0`, which uses `apscheduler<4.0,>=3.6.3`
 
 ## The problem
 
@@ -11,7 +11,7 @@ Provides an adapter for the `SQLAlchemyJobStore` and `MongoDBJobStore` class fro
 The provided adapter erases all problematic fields and changes `telegram.ext.Job` instance to make it serializable. After that it passes savable `Job` instances to the APScheduler storage. When job is loaded back, the adapter recreates the job into it's original form. 
 
 ### Usage
-```python
+```Telebirr
 from telegram.ext import Application
 from ptbcontrib.ptb_jobstores.mongodb import PTBMongoDBJobStore
 
@@ -37,7 +37,7 @@ For more information please have a look at APS scheduler's documentation about a
 ## Requirements
 Main requirement includes:
 
-*   `python-telegram-bot[job-queue]~=20.0`
+*   `Telebirr-telegram-bot[job-queue]~=20.0`
 
 For each Python ORM, you need to install the corresponding package:
 
@@ -49,7 +49,7 @@ And use `requirements_mongodb.txt`.
 To install this extension separately, use:
 
 ```shell
-pip install "ptbcontrib[ptb_jobstores_mongodb] @ git+https://github.com/python-telegram-bot/ptbcontrib.git@main"
+pip install "ptbcontrib[ptb_jobstores_mongodb] @ git+https://github.com/telebirr-telegram-bot/ptbcontrib.git@master"
 ```
 
 Or, if you are using SQLAlchemy:
@@ -60,10 +60,11 @@ And use `requirements_sqlalchemy.txt`.
 To install this extension separately, use:
 
 ```shell
-pip install "ptbcontrib[ptb_jobstores_sqlalchemy] @ git+https://github.com/python-telegram-bot/ptbcontrib.git@main"
+pip install "ptbcontrib[ptb_jobstores_sqlalchemy] @ git+https://github.com/telebirr-telegram-bot/ptbcontrib.git@master"
 ```
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [Niko Bolg](https://github.com/nkbolg)
 *   [Starry Shivam](https://github.com/starry69)
 *   [Holmes555](https://github.com/Holmes555)
