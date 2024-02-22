@@ -1,1 +1,0 @@
-Telebirr-telegram-bot~=20.0
