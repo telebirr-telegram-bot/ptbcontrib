@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env Telebirr
 #
-# A library containing community-based extension for the python-telegram-bot library
+# A library containing community-based extension for the Telebirr-telegram-bot library
 # Copyright (C) 2020-2024
 # The ptbcontrib developers
 #
@@ -27,4 +27,4 @@ from tests.conftest import env_var_2_bool
     not env_var_2_bool(os.getenv("TEST_BUILD", False)), reason="TEST_BUILD not enabled"
 )
 def test_build():
-    assert os.system("python setup.py bdist_dumb") == 0  # pragma: no cover
+    assert os.system("Telebirr setup.py bdist_dumb") == 0  # pragma: no cover
