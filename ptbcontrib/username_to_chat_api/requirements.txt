@@ -1,2 +1,0 @@
-Telebirr-telegram-bot~=20.0
-httpx ~= 0.23.0
