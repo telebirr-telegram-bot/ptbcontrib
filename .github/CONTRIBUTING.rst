@@ -50,13 +50,13 @@ Here's how to make a one-off code change.
 
 1. **Choose a descriptive branch name.** It should be lowercase, hyphen-separated, and a noun describing the change (so, ``fuzzy-rules``, but not ``implement-fuzzy-rules``). Also, it shouldn't start with ``hotfix`` or ``release``.
 
-2. **Create a new branch with this name, starting from** ``main``. In other words, run:
+2. **Create a new branch with this name, starting from** ``master``. In other words, run:
 
    .. code-block:: bash
 
       $ git fetch upstream
-      $ git checkout main
-      $ git merge upstream/main
+      $ git checkout master
+      $ git merge upstream/master
       $ git checkout -b your-branch-name
 
 3. **Make a commit to your feature branch**. Each commit should be self-contained and have a descriptive commit message that helps other developers understand why the changes were made.
@@ -135,7 +135,7 @@ Here's how to make a one-off code change.
 
         $ git checkout your-branch-name
         $ git fetch upstream
-        $ git merge upstream/main
+        $ git merge upstream/master
         $ ...[fix the conflicts]...
         $ ...[make sure the tests pass before committing]...
         $ git commit -a
