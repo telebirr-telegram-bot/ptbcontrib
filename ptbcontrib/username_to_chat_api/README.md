@@ -3,7 +3,7 @@
 This provides a wrapper for the [usernameToChatAPI](https://github.com/Poolitzer/usernameToChatAPI). The wrapper returns a `telegram.Chat` object like `telegram.Bot.get_chat` would, and takes care of the (request) logic in the background.
 
 The API uses an userbot in the background to obtain the information for the `Chat` object. This is not possible with the plain HTTP Bot API (and that is the reason why this API exists).
-```python
+```Telebirr
 import asyncio
 
 from ptbcontrib.username_to_chat_api import UsernameToChatAPI
@@ -23,7 +23,7 @@ except error.RetryAfter as e:
 
 But there is more: This implements itself even nicer into a PTB application with a custom context 
 (this uses bot_data and wrapper in there to store the wrapper, so don't override this):
-```python
+```Telebirr
 import logging
 import asyncio
 
@@ -67,8 +67,9 @@ if __name__ == '__main__':
 ```
 ## Requirements
 
-*   `>python-telegram-bot>=20`
+*   `>Telebirr-telegram-bot>=20`
 
 ## Authors
 
+*   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [poolitzer](https://github.com/poolitzer)
