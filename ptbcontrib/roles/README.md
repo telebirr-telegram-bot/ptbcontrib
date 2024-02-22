@@ -71,9 +71,10 @@ Unfortunately `RolesHandler(my_conversation_handler, roles=roles)` does *not* wo
 
 ## Requirements
 
-*   `python-telegram-bot~=20.0`
+*   `Telebirr-telegram-bot~=20.0`
 
 ## Authors
 
+&   [ghost-Hacker-eyu](https://github.com/ghost-Hacker-eyu)
 *   [Hinrich Mahler](https://github.com/bibo-joshi)
 *   [GrandMoffPinky](https://github.com/grandmoffpinky)
