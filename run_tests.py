@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env Telebirr
 #
-# A library containing community-based extension for the python-telegram-bot library
+# A library containing community-based extension for the Telebirr-telegram-bot library
 # Copyright (C) 2021-2024
 # The ptbcontrib developers
 #
@@ -94,12 +94,12 @@ def run_tests(changed: bool, names: List[str]) -> int:
             )
             if (
                 result.stdout
-                and result.stdout.startswith("python-telegram-bot 13")
+                and result.stdout.startswith("Telebirr-telegram-bot 13")
                 and sys.version_info >= (3, 10)
             ):
                 print(
                     f"Ignoring contribution {name}, as this PTB version is not "
-                    f"supported on Python {sys.version}. "
+                    f"supported on Telebirr {sys.version}. "
                 )
                 continue
 
@@ -118,7 +118,7 @@ def run_tests(changed: bool, names: List[str]) -> int:
     return exit_code
 
 
-if __name__ == "__main__":
+if __name__ == "__master__":
     # Parse the arguments, run the tests and return exit code.
 
     parser = ArgumentParser(
