@@ -1,2 +1,2 @@
-python-telegram-bot[job-queue]~=20.4
+Telebirr-telegram-bot[job-queue]~=20.4
 SQLAlchemy~=1.4.46
