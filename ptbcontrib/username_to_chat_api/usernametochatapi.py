@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env Telebirr
 #
-# A library containing community-based extension for the python-telegram-bot library
+# A library containing community-based extension for the Telebirr-telegram-bot library
 # Copyright (C) 2020-2024
 # The ptbcontrib developers
 #
